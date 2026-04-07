@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookingAccess Service</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f7fafc;
+      color: #1a202c;
+    }
+    .card {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    code {
+      background: #edf2f7;
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+    }
+    li {
+      margin: 0.35rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>BookingAccess Service is running</h1>
+    <p>This is the DataAccess API for Sprint 1.</p>
+    <p>Main endpoints:</p>
+    <ul>
+      <li><code>POST /booking-access/admin/login</code></li>
+      <li><code>POST /booking-access/classes</code></li>
+      <li><code>POST /booking-access/classes/{classId}/assign-instructor</code></li>
+      <li><code>POST /booking-access/instructors/{instructorId}/assign-course</code></li>
+      <li><code>POST /booking-access/courses/{courseId}/assign-student</code></li>
+    </ul>
+    <p>Health endpoint: <code>/actuator/health</code></p>
+  </div>
+</body>
+</html>
